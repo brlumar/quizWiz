@@ -1,0 +1,13 @@
+/* Global Classes */
+.text-center {
+    text-align: center;
+    
+  }
+
+  button {
+    background-color: grey; //makes start button gray 
+    width: 100px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #a52a2a; //give my start button 
+
+  }
