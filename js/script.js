@@ -7,6 +7,7 @@ var startIsClicked = false;
 
 button.addEventListener("click", isClicked);
 
+
 function isClicked (){
     startIsClicked = true;
     console.log ("clicked");
@@ -18,10 +19,10 @@ function isClicked (){
 
 body.append(button); //adds button to body
 
-//console.log (startIsClicked);
+console.log (startIsClicked);
 
-//isClicked(startIsClicked);
-//console.log (startIsClicked);
+isClicked(startIsClicked);
+console.log (startIsClicked);
 
 //var currentQuestionIndex=0;
 
@@ -35,3 +36,15 @@ function showCurrentQuestion(){
 showCurrentQuestion();
 
 
+
+
+
+
+function whichQuestion(){
+var random = Math.random(); //generates a random number
+var ranIndex = Math.floor(random * 10) //creates a whole number and round down to select with question will be used. 
+
+return ranIndex;
+}
+console.log('we are using question '); 
+console.log(whichQuestion());
