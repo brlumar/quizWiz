@@ -18,10 +18,20 @@ function isClicked (){
 
 body.append(button); //adds button to body
 
+console.log (startIsClicked);
+
 //isClicked(startIsClicked);
 console.log (startIsClicked);
 
+//var currentQuestionIndex=0;
+
+function showCurrentQuestion(){
+    var currentQuestionIndex=0;
+    var questionEl =document.querySelector(".quizQuestion");
+    questionEl.innerText = questionData[currentQuestionIndex].quizQuestion;
+}
 
 
+showCurrentQuestion();
 
 
